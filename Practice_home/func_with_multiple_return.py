@@ -8,4 +8,3 @@ r=float(input())
 a=circle(r)
 
 print("Area = ",a[0]," Cirumference = ",a[1])
-
