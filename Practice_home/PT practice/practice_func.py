@@ -14,4 +14,9 @@ print(id(b))
 '''
 
 #logical operator
+'''
+a=4
+if(a>5 and a%2==0):
+    print("True")
+'''
 
