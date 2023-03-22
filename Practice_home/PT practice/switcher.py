@@ -6,4 +6,4 @@ def week(n):
     }
     return switcher.get(n,"Invalid NUm")
 
-print(week(5))
+print(week(0))
