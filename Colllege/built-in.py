@@ -10,3 +10,4 @@ Demo(2,3)
 print(Demo.__doc__)
 print(Demo.__name__)
 print(Demo.__dict__)
+#hi
