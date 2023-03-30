@@ -6,11 +6,13 @@ def prime(num):
 	for i in range(2,a):
 		if(num%i ==0):
 			flag=False
+			
 	print("First loop activated")
 	if(num>10):
 		for i in range(a+1,11):
 			if(num%i ==0):
 				flag=False
+				
 		print("Second loop activated")
 	if(flag==False):
 		return 0
