@@ -9,8 +9,36 @@ class Person:
     def getAge(self):
         return self.age
     
+class Sports:
+    def __init__(self):
+        spoints=0
 
-class Student(Person):
+    def getSPoints(self):
+        print("Which level have you represented: ")
+        print("1. National \n2.State \n3.District\n4.Other")
+        level=int(input())
+        if(level==1):
+            spoints=25
+        elif(level==2):
+            spoints=15
+        elif(level==3):
+            spoints=5
+        else:
+            spoints=0
+        return spoints
+
+    def choice(self):
+        print("Have you participated in any sports? Y/N")
+        c=input()
+        if(c in 'Y,y'):
+            spoints=self.getSPoints()
+        else:
+            spoints=0
+        return spoints
+
+
+
+class Student(Person,Sports):
     def __init__(self,name,age,id,sem,m1,m2):
         super().__init__(name,age)
         self.id=id
@@ -19,11 +47,11 @@ class Student(Person):
         self.m2=m2
 
     def getTotal(self):
-        self.total=self.m1+self.m2
+        self.total=self.m1+self.m2+self.choice()
         return self.total
     
     def getAverage(self):
-        self.avg=self.getTotal()/2
+        self.avg=self.total/2
         return self.avg
     
     def getDetails(self):
