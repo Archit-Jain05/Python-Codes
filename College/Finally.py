@@ -17,4 +17,3 @@ else:
 
 finally:
         print("Finally block")
-        print()
