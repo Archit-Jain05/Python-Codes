@@ -1,5 +1,5 @@
 import threading
-from threading import *
+from threading import Thread,current_thread
 
 print(current_thread().getName())
 def mt():
