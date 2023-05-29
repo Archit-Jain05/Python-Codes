@@ -7,4 +7,4 @@ class MyException(Exception):
 
 
 
-raise MyException("Exception 1")
+raise MyException("Exception 1")       
